@@ -1,0 +1,10 @@
+jira
+PyGithub
+google-generativeai
+PyYAML
+GitPython
+black
+flake8
+pytest
+fastapi
+uvicorn
