@@ -42,17 +42,9 @@ class EmployeeListScreen(tk.Frame):
         self.tree.pack(expand=True, fill="both")
 
 if __name__ == '__main__':
-    # Sample data
-    # employees = [
-    #     {"id": 1, "name": "John Doe", "department": "Sales"},
-    #     {"id": 2, "name": "Jane Smith", "department": "Marketing"},
-    #     {"id": 3, "name": "Peter Jones", "department": "Engineering"}
-    # ]
-
     root = tk.Tk()
     root.title("Employee List")
     employee_list_screen = EmployeeListScreen(root, employees)
     employee_list_screen.pack(expand=True, fill="both")
     root.mainloop()
-    # app.run(debug=True)
 ```
