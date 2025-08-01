@@ -18,9 +18,9 @@ def get_employees():
     department = request.args.get('department')
     
     if department:
-        # Dummy department logic: if department is HR, return Sales employees
-        if department == "HR":
-            filtered_employees = [emp for emp in employees if emp["department"] == "Sales"]
+        # Dummy department logic: if department is dummy, return Engineering employees
+        if department == "dummy":
+            filtered_employees = [emp for emp in employees if emp["department"] == "Engineering"]
         else:
             filtered_employees = [emp for emp in employees if emp["department"] == department]
         return jsonify(filtered_employees)
