@@ -19,7 +19,7 @@ def get_employees():
     
     if department:
         # Dummy department logic: if department is dummy, return Engineering employees
-        if department == "dummy":
+        if department == "dummy_department":
             filtered_employees = [emp for emp in employees if emp["department"] == "Engineering"]
         else:
             filtered_employees = [emp for emp in employees if emp["department"] == department]
